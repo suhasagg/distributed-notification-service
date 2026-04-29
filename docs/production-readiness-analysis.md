@@ -828,20 +828,6 @@ Support:
 - progress tracking
 - campaign-level throttling
 
-## 12. Interview Talking Points
-
-Use these 10 bullets:
-
-1. This is a write-heavy and async-dispatch system where enqueue latency and reliability matter.
-2. PostgreSQL is the source of truth for notification records, idempotency, and history.
-3. Kafka decouples API requests from slow external providers.
-4. Redis protects the system using tenant/user/channel rate limiting.
-5. Tenant isolation is enforced through DB queries, Redis keys, and Kafka events.
-6. User preferences suppress unwanted notifications before provider dispatch.
-7. Production should use the outbox pattern to avoid DB commit/Kafka publish gaps.
-8. Provider failures should be handled through retries, DLQs, and fallback routing.
-9. Cost is optimized by suppressing duplicates, honoring preferences, batching, and throttling.
-10. Observability should focus on enqueue latency, Kafka lag, provider failures, and delivery status.
 
 ## 13. Local Setup and Run Instructions
 
