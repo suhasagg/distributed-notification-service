@@ -1,4 +1,4 @@
-Distributed Notification Delivery Service
+## Distributed Notification Delivery Service
 
 A multi-tenant, event-driven notification platform designed to send user notifications through multiple channels such as Email, SMS, and Push.
 
