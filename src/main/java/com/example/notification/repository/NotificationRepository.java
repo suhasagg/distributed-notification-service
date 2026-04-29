@@ -1,0 +1,3 @@
+package com.example.notification.repository;
+import com.example.notification.domain.*;import org.springframework.data.jpa.repository.JpaRepository;import java.util.*;
+public interface NotificationRepository extends JpaRepository<Notification,String>{ Optional<Notification> findByTenantIdAndIdempotencyKey(String tenantId,String idempotencyKey); Optional<Notification> findByTenantIdAndId(String tenantId,String id); List<Notification> findTop50ByTenantIdAndUserIdOrderByCreatedAtDesc(String tenantId,String userId); List<Notification> findTop50ByTenantIdAndStatusOrderByUpdatedAtDesc(String tenantId,NotificationStatus status); }
