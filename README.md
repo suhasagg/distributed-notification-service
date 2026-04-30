@@ -258,7 +258,7 @@ DLQ is used for:
 - manual recovery
 
 ## 5. Notification Lifecycle
-
+```text
 QUEUED
   |
   v
@@ -290,7 +290,7 @@ DEAD_LETTERED
   |
   v
 QUEUED
-
+```
 ## 6. Retry and DLQ Strategy
 
 Retry is used for transient failures:
