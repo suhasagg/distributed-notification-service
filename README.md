@@ -258,6 +258,7 @@ DLQ is used for:
 - manual recovery
 
 ## 5. Notification Lifecycle
+
 QUEUED
   |
   v
@@ -281,6 +282,7 @@ RETRYING
   |
   v
 DEAD_LETTERED
+
 
 Requeue path:
 
